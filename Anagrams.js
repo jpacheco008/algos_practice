@@ -4,28 +4,28 @@
 //cinema, formed from iceman.
 
 //My try
-function validAnagram(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false
-  }
-  let firstWord = {}
-  let secondWord = {}
-  for (let val of arr1) {
-    firstWord[val] = (firstWord[val] || 0) + 1
-  }
-  for (let val of arr2) {
-    secondWord[val] = (secondWord[val] || 0) + 1
-  }
-  for (let key in firstWord) {
-    if (!(key in secondWord)) {
-      return false
-    }
-    if (secondWord[key] !== firstWord[key]) {
-      return false
-    }
-  }
-  return true
-}
+// function validAnagram(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false
+//   }
+//   let firstWord = {}
+//   let secondWord = {}
+//   for (let val of arr1) {
+//     firstWord[val] = (firstWord[val] || 0) + 1
+//   }
+//   for (let val of arr2) {
+//     secondWord[val] = (secondWord[val] || 0) + 1
+//   }
+//   for (let key in firstWord) {
+//     if (!(key in secondWord)) {
+//       return false
+//     }
+//     if (secondWord[key] !== firstWord[key]) {
+//       return false
+//     }
+//   }
+//   return true
+// }
 validAnagram('qwerty', 'qeywrt')
 
 //Solution
@@ -41,7 +41,7 @@ function validAnagram(first, second) {
     // if letter exists, increment, otherwise set to 1
     lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
   }
-  console.log(lookup)
+  // console.log(lookup)
 
   for (let i = 0; i < second.length; i++) {
     let letter = second[i];
@@ -53,8 +53,8 @@ function validAnagram(first, second) {
     }
   }
 
-  return true;
+  return console.log('true');
 }
 
 // {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
-validAnagram('anagrams', 'nagaramm')
+// validAnagram('anagrams', 'nagaramm')

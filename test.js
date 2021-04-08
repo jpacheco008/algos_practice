@@ -67,7 +67,7 @@ function SearchingChallenge(str) {
 
 }
 
-console.log(SearchingChallenge('2aabbacbaa'))
+// console.log(SearchingChallenge('2aabbacbaa'))
 
 // function ArrayChallenge(arr) {
 //   // code goes here
@@ -123,3 +123,4 @@ console.log(SearchingChallenge('2aabbacbaa'))
 
 // keep this function call here
 // console.log(ArrayChallenge([3, 5, -1, 8, 12]));
+
