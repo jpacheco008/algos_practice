@@ -124,3 +124,15 @@ function SearchingChallenge(str) {
 // keep this function call here
 // console.log(ArrayChallenge([3, 5, -1, 8, 12]));
 
+function reverse(str) {
+  let strArr = []
+  strArr = str.split('')
+  // console.log(strArr)
+  let result = []
+  for (let i = str.length + 1; i >= 0; i--) {
+    result.push(strArr[i])
+  }
+  // console.log(result)
+  return console.log(result.join(''))
+}
+reverse('raining')
